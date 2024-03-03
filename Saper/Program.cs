@@ -32,21 +32,18 @@
 
                 {
                     if (board[y, x] == '*')
-
                     {
                         Console.WriteLine("Boom! Koniec gry.");
 
                         gameOver = true;
                     }
                     else
-
                     {
                         int count = CountAdjacentBombs(board, x, y);
 
                         displayBoard[y, x] = count.ToString()[0];
 
-                        if (count /*??*/ 0)
-
+                        if (count == 0)
                         {
                             // Odkryj sąsiadujące puste pola.
 
@@ -54,7 +51,6 @@
                         }
 
                         if (CheckWin(displayBoard, bombCount))
-
                         {
                             Console.WriteLine("Gratulacje! Wygrałeś!");
 
@@ -63,13 +59,11 @@
                     }
                 }
                 else
-
                 {
                     Console.WriteLine("Nieprawidłowe współrzędne. Spróbuj ponownie.");
                 }
             }
             else
-
             {
                 Console.WriteLine("Nieprawidłowe dane wejściowe. Spróbuj ponownie.");
             }
