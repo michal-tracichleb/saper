@@ -172,7 +172,7 @@
         for (int i = Math.Max(0, y - 1); i <= Math.Min(height - 1, y + 1); i++)
 
         {
-            for (int j = Math.Max(0, x - 1); j <= /*??*/(width - 1, x + 1); j++)
+            for (int j = Math.Max(0, x - 1); j <= Math.Min(width - 1, x + 1); j++)
 
             {
                 if (board[i, j] == '*')
