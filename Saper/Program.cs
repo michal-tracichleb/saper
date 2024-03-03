@@ -121,8 +121,7 @@
             }
         }
 
-        /*??*/
-        displayBoard;
+        return displayBoard;
     }
 
     private static void DisplayBoard(char[,] board)
